@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Signin extends StatefulWidget {
   const Signin({super.key});
@@ -10,6 +11,17 @@ class Signin extends StatefulWidget {
 class _SigninState extends State<Signin> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Signin"),),
+      body:  Center(child: Column(
+        children: [
+          TextField(
+          ),
+          ElevatedButton(onPressed: (){
+
+          }, child: Text("Sign In"))
+        ],
+      ),),
+    );
   }
 }
